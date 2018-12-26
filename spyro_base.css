@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Quicksand:300,400,500,700');
+/* 
+font-family: 'Quicksand', sans-serif;
+font-family: 'Major Mono Display', monospace;
+ */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	user-select: none;
+	/*border: 1px solid red;*/
+}
+
+:root {
+	font-family: 'Quicksand', sans-serif;
+	--c-light : #fff;
+	--c-dark : #000;
+	--c-inactive: grey;
+}
+
+body {
+	width: 100vw;
+}
+
+.full {
+	width: 100%;
+}
+
+.container {
+	padding: 0.5rem 1.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.container--center {
+	justify-content: center;
+	align-items: center;
+}
+
+.container--vertical {
+	flex-direction: column;
+}
+
+.heading, .text {
+	display: block;
+}
+
+.heading {
+	padding: 0.5rem 0 0.7rem 0;
+}
+
+.heading--big {
+	font-size: 1.8rem;
+}
+
+.heading--med {
+	font-size: 1.5rem;
+}
+
+.heading--sml {
+	font-size: 1.1rem;
+}
+
+.text {
+	padding: 0.3rem 0 0.5rem 0;
+}
+
+.button {
+	padding: 0.7rem 1rem;
+	background: var(--c-light);
+	border: 0.15rem solid var(--c-dark);
+	color: var(--c-dark);
+	border-radius: 0.3rem;
+	cursor: pointer;
+	letter-spacing: 1px;
+	font-size: 0.9em;
+}
+
+.button:hover {
+	color: var(--c-light);
+	background: var(--c-dark);
+}
+
+.button--inactive {
+	color: var(--c-inactive);
+	border-color: var(--c-inactive);
+	background: var(--c-light);
+}
+
+.button--inactive:hover {
+	color: var(--c-light);
+	background: var(--c-inactive);
+}
